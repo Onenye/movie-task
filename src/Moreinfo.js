@@ -7,7 +7,7 @@ import {useParams, useNavigate} from "react-router-dom"
 const Moreinfo = () => {
     const {id}= useParams();
     const navigate = useNavigate();
-    //const[loading, setloading]=useState(false);
+    const[loading, setloading]=useState(false);
     const[film, setFilm]=useState(null);
     //const[error, setError]=useState(null);
     
