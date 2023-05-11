@@ -7,9 +7,9 @@ import {useParams, useNavigate} from "react-router-dom"
 const Moreinfo = () => {
     const {id}= useParams();
     const navigate = useNavigate();
-    const[loading, setloading]=useState(false);
+    //const[loading, setloading]=useState(false);
     const[film, setFilm]=useState(null);
-    const[error, setError]=useState(null);
+    //const[error, setError]=useState(null);
     
     
     const fetchData=async (urls) =>{
@@ -24,7 +24,7 @@ const Moreinfo = () => {
         const getFilmData = async (urls) => {
            try {
                 setloading(true)
-                const response = await axios.get('https://swapi.dev/api/films/${id}');
+                const response = await axios.get(`https://swapi.dev/api/films/${id}`);
                 setFilm(response.data);
             
 

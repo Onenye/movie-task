@@ -31,7 +31,7 @@ const Home = () => {
           <div className="loader">Data is loading. Please wait...</div>
         )}
         {error && (
-          <div>{"There is a problem fetching your data-${error}"} </div>
+          <div>{`There is a problem fetching your data-${error}`} </div>
         )}
         <div className="wrapper">
           <ul className="info">
